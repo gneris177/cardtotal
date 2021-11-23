@@ -31,8 +31,8 @@ app.post("/card", async (req, res) => {
 
 app.get("/carddata", async (req, res) => {
   try {
-    const res = await Card.find();
-    res.status(200).json( res );
+    const data = await Card.find();
+    res.status(200).json( data );
   } catch (err) {
     res.status(400).json( err );
   }
