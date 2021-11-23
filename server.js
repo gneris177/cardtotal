@@ -7,6 +7,9 @@ db.conn();
 
 app.use(express.json());
 
+app.listen(PORT, console.log("Server ON"));
+const PORT = process.env.PORT || 8877;
+
 const Card = require("./models/cardModel");
 
 app.post("/card", async (req, res) => {
@@ -24,4 +27,3 @@ app.post("/card", async (req, res) => {
   }
 });
 
-app.listen(8000);
