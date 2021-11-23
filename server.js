@@ -6,6 +6,7 @@ const db = require("./database/config");
 db.conn();
 
 app.use(express.json());
+app.use(cors())
 
 const PORT = process.env.PORT || 8877;
 app.listen(PORT, console.log("Server ON"));
