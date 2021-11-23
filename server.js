@@ -7,8 +7,9 @@ db.conn();
 
 app.use(express.json());
 
-app.listen(PORT, console.log("Server ON"));
 const PORT = process.env.PORT || 8877;
+app.listen(PORT, console.log("Server ON"));
+
 
 const Card = require("./models/cardModel");
 
