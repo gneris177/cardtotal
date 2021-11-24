@@ -16,7 +16,7 @@ const Card = require("./models/cardModel");
 
 app.post("/card", async (req, res) => {
   try {
-    const { cardId, name } = req.body;
+    const { cardId, name, msg } = req.body;
     const card = await Card.create({
       name: name,
       cardId: cardId,
