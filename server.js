@@ -20,6 +20,7 @@ app.post("/card", async (req, res) => {
     const card = await Card.create({
       name: name,
       cardId: cardId,
+      msg: msg
     })
     console.log(card)
 

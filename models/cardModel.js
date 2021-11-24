@@ -9,7 +9,8 @@ const CardSchema = new Schema({
   cardId: {
     type: String,
     required: true,
-  }
+  },
+  msg: STring
 });
 
 const cardModel = mongoose.model("info", CardSchema);
